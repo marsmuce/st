@@ -1488,10 +1488,10 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
 	r.width = width;
 	XftDrawSetClipRectangles(xw.draw, winx, winy, &r, 1);
 
-	/* Render the glyphs. */
-  XftDrawGlyphFontSpec(xw.draw, fg, specs, len);
-	
-  /* Render underline and strikethrough. */
+  /* Render the glyphs. */
+	XftDrawGlyphFontSpec(xw.draw, fg, specs, len);
+
+	/* Render underline and strikethrough. */
 	if (base.mode & ATTR_UNDERLINE) {
 		XftDrawRect(xw.draw, fg, winx, winy + dc.font.ascent + 1,
 				width, 1);

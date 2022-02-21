@@ -6,6 +6,10 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "monospace:pixelsize=20:antialias=true:autohint=true";
+static char *font2[] = {
+  "Symbols Nerd Font:pixelsize=20:antialias=true:autohint=true",
+  "Twemoji:pixelsize=20:antialias=true:autohint=true"
+};
 static int borderpx = 20;
 
 /*
